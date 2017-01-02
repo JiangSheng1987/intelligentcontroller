@@ -1,12 +1,14 @@
 # 使用说明
 
 ## 一、dll准备
- ### 1.将 ```C++/SystemController```导入VS2013
- ### 2.根据不同情况设置解决方案的平台属性，我的系统为64位的系统，故设置为```(活动)x64```
+
+### 1.将 ```C++/SystemController```导入VS2013
+### 2.根据不同情况设置解决方案的平台属性，我的系统为64位的系统，故设置为```(活动)x64```
 
 ![](./imgs/config_platform_properties.jpg)
- ### 3.F6或者单击```生成解决方案```菜单
- ### 4.将项目目录下的```Debug/SystemController.dll```文件拷贝到```C://windows/system32```目录下
+
+### 3.F6或者单击```生成解决方案```菜单
+### 4.将项目目录下的```Debug/SystemController.dll```文件拷贝到```C://windows/system32```目录下
 
 ## 二、server准备
 ### 1.在```java/intelligentcontroller```目录下打开命令行窗口，使用```mvn clean package```命令打包
