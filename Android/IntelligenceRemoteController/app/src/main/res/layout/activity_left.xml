@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/playOrStop"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button2"
+        android:text="播放/暂停" />
+
+    <Button
+        android:id="@+id/voiceUp"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_above="@id/playOrStop"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button3"
+        android:text="音量增大" />
+
+    <Button
+        android:id="@+id/voiceDown"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_below="@id/playOrStop"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button3"
+        android:text="音量减小" />
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/playOrStop"
+        android:background="@drawable/button3"
+        android:text="上一首" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/playOrStop"
+        android:background="@drawable/button3"
+        android:text="下一首" />
+
+
+</RelativeLayout>

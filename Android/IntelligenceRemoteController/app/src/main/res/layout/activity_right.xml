@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/shutdown"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/shutdown_cancel"
+        android:background="@drawable/button3"
+        android:text="定时关机" />
+
+
+    <Button
+        android:id="@+id/shutdown_cancel"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button3"
+        android:text="取消关机" />
+
+
+    <Button
+        android:id="@+id/systemVoiceDown"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_toLeftOf="@+id/systemVoiceUp"
+        android:layout_above="@+id/shutdown"
+        android:background="@drawable/button3"
+        android:text="音量减小" />
+
+    <Button
+        android:id="@+id/systemVoiceUp"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_above="@id/shutdown_cancel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button3"
+        android:text="音量增大" />
+
+    <Button
+        android:id="@+id/systemVoiceMute"
+        android:layout_width="@dimen/buttonWith"
+        android:layout_height="@dimen/buttonWith"
+        android:layout_toRightOf="@+id/systemVoiceUp"
+        android:layout_alignBottom="@+id/systemVoiceUp"
+        android:background="@drawable/button3"
+        android:text="静音" />
+
+</RelativeLayout>
